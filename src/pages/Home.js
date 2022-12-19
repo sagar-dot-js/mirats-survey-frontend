@@ -7,6 +7,7 @@ const Home = () => {
   return (
     <div className="test">
       <Link to="/about">Home </Link>{" "}
+      <h1>kajal</h1>
     </div>
   );
 };
