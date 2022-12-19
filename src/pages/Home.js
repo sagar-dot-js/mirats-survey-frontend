@@ -5,7 +5,7 @@ import { ContextProvider } from "../Context";
 const Home = () => {
   let { user } = useContext(ContextProvider);
   return (
-    <div>
+    <div className="test">
       <Link to="/about">Home </Link>{" "}
     </div>
   );
