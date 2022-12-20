@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 .test {
   @apply border border-red-500;
+}
+
+/* Sign up form */
+
+.sign-up-form {
+  @apply flex flex-col gap-[16px];
+}
+
+.sign-up-form h3 {
+  @apply text-[16px] font-[600];
+}
+
+.sign-up-form input {
+  @apply border  border-[#E2E2E5] outline-[#1765DC] w-full rounded-[4px];
+  padding: 6px 16px 5px;
+}
+
+.sign-up-form button {
+  @apply w-full bg-[#1765DC] px-[16px] py-[8px] rounded-[4px] text-[#FFFFFF] font-[600];
 }
