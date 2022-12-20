@@ -4,19 +4,19 @@ import miLogo from "../../src/assets/image 9.png";
 const SignUp = () => {
   let [user, setUser] = useState({});
   let handelInputChange = (e) => {
-    console.log(e.target.name);
+    // console.log(e.target.name);
     setUser({ ...user, [e.target.name]: e.target.value });
   };
 
   console.log(user);
 
   return (
-    <div className=" h-screen w-full flex justify-center relative">
+    <div className=" h-screen w-full flex justify-center relative bg-[#F9FBFF]">
       <div className="absolute top-[50px] left-[100px] ">
         <img src={miLogo} />
       </div>
-      <div className="w-[470px]  h-[550px] mt-[180px]   ">
-        <div className="h-[92%] bg-[#F9FBFF] p-[25px]">
+      <div className="w-[470px]  h-[550px] mt-[180px]">
+        <div className="h-[80%] bg-[#fff] opacity-[0.96] p-[25px]">
           <div className=" flex flex-col gap-[24px] h-[90%] ">
             <div className="  flex flex-col gap-[16px]">
               <h1 className="font-[700] text-[32px] text-center"> Sign Up</h1>
@@ -25,7 +25,7 @@ const SignUp = () => {
                 surveys on
               </p>
             </div>
-            <div className="sign-up-form ">
+            <div className="sign-up-form">
               <div className="flex flex-col gap-[8px]">
                 <h3 className="">First Name</h3>
                 <div>
@@ -37,9 +37,9 @@ const SignUp = () => {
                       handelInputChange(e);
                     }}
                   />
-                  <p className="text-[#FF0000] font-[400] text-[12px] mt-[4px]">
+                  {/* <p className="text-[#FF0000] font-[400] text-[12px] mt-[4px]">
                     Error Message
-                  </p>
+                  </p> */}
                 </div>
               </div>
               <div className="flex flex-col gap-[8px]">
@@ -53,9 +53,9 @@ const SignUp = () => {
                       handelInputChange(e);
                     }}
                   />
-                  <p className="text-[#FF0000] font-[400] text-[12px]  mt-[4px]">
+                  {/* <p className="text-[#FF0000] font-[400] text-[12px]  mt-[4px]">
                     Error Message
-                  </p>
+                  </p> */}
                 </div>
               </div>
               <div>

@@ -23,6 +23,31 @@
 .sign-up-form input {
   @apply border  border-[#E2E2E5] outline-[#1765DC] w-full rounded-[4px];
   padding: 6px 16px 5px;
+  height: 40px;
+  color: #1765dc;
+}
+
+.sign-up-form input::placeholder {
+  font-size: 14px;
+}
+
+.sign-up-form input:hover {
+  background: #f6faff;
+}
+
+.sign-up-form input:active {
+  background: #f2f7ff;
+  border: 1px solid #003f9f;
+  border: 1px solid red;
+  box-shadow: 0px 0px 4px rgba(0, 63, 159, 0.25);
+  font-weight: 600;
+}
+
+.sign-up-form input:focus {
+  background: #e7f0ff;
+  border: 1px solid #1765dc;
+  box-shadow: 0px 0px 6px rgba(23, 101, 220, 0.25);
+  font-weight: 600;
 }
 
 .sign-up-form button {
